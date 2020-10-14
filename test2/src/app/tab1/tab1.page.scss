@@ -1,0 +1,52 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+  ion-content{
+      --background: url('/assets/icon/Fondo.png') no-repeat 100% 100%;
+  }
+  h1{
+    color:rgb(237,102,43);
+    font-family: arial;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 6000;
+    text-align:center;
+    text-shadow: 1px 1px #ffffff;
+  }
+
+  p{
+    color:rgb(212, 212, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6000;
+    text-align:center;
+  }
+
+  p1{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6000;
+    text-align:center;
+  }
+
+  p2{
+    color:rgb(207, 207, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6000;
+    text-align:center;
+    text-decoration: underline;
+  }
+
+  p3{
+    color:rgb(237,102,43);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6000;
+    text-align:center;
+  }

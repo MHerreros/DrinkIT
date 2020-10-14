@@ -1,0 +1,73 @@
+h1{
+  color:rgb(237,102,43);
+  font-family: arial;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 100px;
+  text-align:inherit;
+  text-shadow: 1px 1px #ffffff;
+  margin-bottom: 0px;
+}
+
+h2{
+  color:rgb(255, 255, 255);
+  font-family: arial;
+  font-style: normal;
+  font-weight: 500;
+  font-size:50px;
+  text-align:inherit;
+  text-shadow: 1px 1px rgb(100,100,100);
+  margin-top: 0px;
+}
+h3{
+  color:rgb(237,102,43);
+  font-family: arial;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 100px;
+  text-align:center;
+  text-shadow: 1px 1px #ffffff;
+  margin-bottom: 0px;
+}
+
+p{
+  color:rgb(237,102,43);
+  font-family: arial;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  text-align: center;;
+}
+.header{
+  background-color: rgb(4,68,118);
+  height: 240px;
+  text-align: center;
+}
+
+#logo{
+  float: left;
+  padding-left: 10px
+}
+#preparing{
+  position:relative;
+  object-position: center;
+}
+#drink{
+  position:inherit;
+  object-position: center;
+}
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 300px;
+  height: auto;
+}
+#loading{
+  position: inherit;
+  object-position: center;
+  margin-top: 0px;
+  max-width: 200%;
+  height: auto;
+}

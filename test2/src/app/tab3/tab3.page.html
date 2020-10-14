@@ -1,0 +1,79 @@
+<ion-app>
+  <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>
+          COCKTAILS
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <!-- <ion-content>
+      <ion-header translucent>
+        <ion-toolbar>
+          <ion-title size="large">Elegi tu trago</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </ion-content> -->
+    
+    <!-- ​<picture>
+      <source srcset="https://www.marialabonita.com/wp-content/uploads/2019/08/cerveza-corona-355ml.jpg" type="image/svg+xml">
+      <img src="https://www.marialabonita.com/wp-content/uploads/2019/08/cerveza-corona-355ml.jpg" class="img-fluid img-thumbnail" alt="...">
+    </picture> -->
+    
+    <!-- Default -->
+    
+    <ion-content fullscreen padding>
+    <ion-card>
+      <img src="http://fundeu.fiile.org.ar/library/timthumb/timthumb.php?src=/uploadsfotos/ferne_fundeu_argentina.png&w=720" />
+      <ion-card-header>
+        <ion-card-subtitle>Fernet Branca</ion-card-subtitle>
+        <ion-card-title>Fernet con Coca</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content >
+        30% Fernet, 70% Coca. Un par de estos y estas ATR para el Bolo.
+      </ion-card-content>
+      
+      <ion-button expand="block" (click)="shots('Fernet')"> Seleccionar </ion-button>
+    </ion-card>
+    
+    <ion-card>
+      <img src="https://www.hoyhombre.com.ar/wp-content/uploads/2017/11/vodka2.jpg" />
+      <ion-card-header>
+        <ion-card-subtitle>Absolut Vodka</ion-card-subtitle>
+        <ion-card-title>Destornillador</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        30% de vodka y un 70% de jugo de naranja para no para de bailar en toda la noche
+      </ion-card-content>
+      <ion-button expand ="block" color="warning" (click)="shots('Vodka')" >Seleccionar</ion-button>
+    </ion-card>
+    
+    <ion-card>
+      <img src="https://www.thespruceeats.com/thmb/9g5q0ChNcHs5IjThGwciEsa5d0Y=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/gin-tonic-5a8f334b8e1b6e0036a9631d.jpg" />
+      <ion-card-header>
+        <ion-card-subtitle>Beefeater Gin</ion-card-subtitle>
+        <ion-card-title>Gin Tonic</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        30% Gin y un 70% agua tonica. Al palo, pero ojo con la resaca mañana!
+      </ion-card-content>
+      <ion-button expand ="block" color="success" (click)="shots('Gin')" >Seleccionar</ion-button>
+    </ion-card>
+    
+    <ion-card>
+      <img src="https://www.mojitos.com.ar/images/fotos/prd/18_Campari-orange.jpg" />
+      <ion-card-header>
+        <ion-card-subtitle>Campari</ion-card-subtitle>
+        <ion-card-title>Campari Orange</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        30% Campari y un 70% jugo de naranja. Bueno para disfrutar, no tanto para la joda.
+      </ion-card-content>
+      <ion-button expand ="block" color="danger" (click)="shots('Campari')" >Seleccionar</ion-button>
+    </ion-card>
+    </ion-content>
+    </ion-app>
