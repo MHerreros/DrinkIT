@@ -17,34 +17,40 @@
         </ion-card> -->
 
         <div class="slide">
-          <img src="assets/icon/Logo4.png" alt = "LOGO" class="full-image"/>
-          <ion-text> <P></P><p1>----------------</p1><h1> ¡BIENVENIDO! </h1> <p1>----------------</p1><p></p></ion-text>
-          <ion-text> <p1>Preparate tu trago ideal en <p2>2 simples pasos</p2></p1> <p></p><p3> Desliza para ver las instrucciones...</p3></ion-text>
+          <img src="assets/icon/DrinkIT Logo Vertical V2.png" alt = "LOGO" class="full-image"/>
+          <ion-text> <h1> ¡BIENVENIDO! </h1> <p></p></ion-text>
+          <ion-text> 
+            <p1>Prepara tu trago en 3 simples pasos</p1> <br>
+            
+            
+            <br><p2>Ingresa la IP del servidor</p2><br>
+          </ion-text>
           <P></P>
           <ion-item>
             <ion-input (ionChange)="ipChange()" placeholder = "Ingresa la IP del server"  id="IPaddress" [(ngModel)]="valorIP"></ion-input>
+           
           </ion-item>
-          
+          <ion-text> <br><br><p3>DESLIZA PARA VER LAS INSTRUCCIONES →</p3><br></ion-text>
         </div>
       </ion-slide>
 
       <ion-slide>
         <img src="assets/icon/Mobile.png">
         <h1>PASO 1</h1>
-        <p>Elegi el trago que quieras en la <b>pagina de seleccion</b></p>
+        <p1>Elegi el trago que quieras en la <p3>pestaña de cocktails</p3></p1>
       </ion-slide>
 
       <ion-slide>
         <img src="assets/icon/glass.png">
         <h1>PASO 2</h1>
-        <p>Una vez elegido el trago<b> apoya el vaso</b> sobre la plataforma</p>
+        <p1>Una vez elegido el trago<p3> apoya el vaso</p3> sobre la plataforma</p1>
       </ion-slide>
 
       <ion-slide>
         <img src="assets/icon/finish.png"/>
         <h1>LISTO!</h1>
-        <p>En unos <b>segundos</b> tendras tu trago!</p>
-        <ion-button fill="clear" href="/tabs/tab3">Empeza a tomar! <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        <p1>En unos segundos <p3>tendras tu trago!</p3></p1>
+        <ion-button fill="clear" href="/tabs/tab3" id = "empezar">Empeza a tomar! <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
       </ion-slide>
 
     </ion-slides>

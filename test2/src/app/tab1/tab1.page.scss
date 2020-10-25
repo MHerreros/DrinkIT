@@ -9,9 +9,10 @@ ion-content ion-toolbar {
     font-family: arial;
     font-style: normal;
     font-weight: 1000;
-    font-size: 6000;
+    font-size: 40px;
     text-align:center;
     text-shadow: 1px 1px #ffffff;
+    margin-top: 0px;
   }
 
   p{
@@ -19,8 +20,9 @@ ion-content ion-toolbar {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 6000;
+    font-size: 18px;
     text-align:center;
+    margin-top: 0px;
   }
 
   p1{
@@ -28,7 +30,7 @@ ion-content ion-toolbar {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 6000;
+    font-size: 18px;
     text-align:center;
   }
 
@@ -37,7 +39,7 @@ ion-content ion-toolbar {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 6000;
+    font-size: 18px;
     text-align:center;
     text-decoration: underline;
   }
@@ -46,7 +48,13 @@ ion-content ion-toolbar {
     color:rgb(237,102,43);
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 6000;
+    font-weight: bold;
+    font-size: 22px;
     text-align:center;
+  }
+  #empezar{
+    color:rgb(29, 156, 230);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
   }
