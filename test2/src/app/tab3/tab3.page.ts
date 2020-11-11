@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{ ToastController} from '@ionic/angular'
+import { ToastController} from '@ionic/angular'
 import { ActionSheetController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { getIpValue } from '../config';
@@ -21,7 +21,17 @@ export class Tab3Page {
 
   async openBusy() {
     const toast = await this.toastController.create({
-      message: 'DrkinIT está ocupada en este momento. Intente nuevamente más tarde.',
+      message: 'DrkinIT está ocupada en este momento. Intente nuevamente más tarde',
+      duration: 5000,
+      position: 'top',
+      color: 'danger',
+    });
+    toast.present();
+  }
+
+  async openEmpty() {
+    const toast = await this.toastController.create({
+      message: 'Por favor, coloca el vaso en la plataforma e intente nuevamente',
       duration: 5000,
       position: 'top',
       color: 'danger',
@@ -38,12 +48,29 @@ export class Tab3Page {
           console.log(val);
           if (val == "busy"){
             this.openBusy();
-          }})
+          } else if (val == "empty"){
+            this.openEmpty();
+          } else if (val == "inProgress"){
+            this.openToast();
+          } else if (val == "cleaning"){
+            this.openToast2();
+          }
+        })
   }
 
   async openToast() {
     const toast = await this.toastController.create({
-      message: 'Bancame un segundito y ya esta tu trago bro.',
+      message: 'Estoy preparando tu trago. Aguarda unos instantes',
+      duration: 5000,
+      position: 'top',
+      color: 'dark',
+    });
+    toast.present();
+  }
+
+  async openToast2() {
+    const toast = await this.toastController.create({
+      message: 'Limpiando la máquina. Aguarde unos instantes',
       duration: 5000,
       position: 'top',
       color: 'dark',
@@ -52,30 +79,52 @@ export class Tab3Page {
   }
   
   async shots(n) {
-        const actionSheet = await this.actionSheetController.create({
-          header: 'Cantidad de Shots de '+ n,
-          buttons: [{
-            text: 'Shot',
-            role: 'destructive',
-            handler: () => { this.openToast();
-              const shot = 1;
-              this.reqDrink(n, shot);
-                        }
-          }, {
-            text: 'Shot x2',
-            role: 'destructive',
-            handler: () => { this.openToast();
-              const shot = 2;
-              this.reqDrink(n, shot);
-            
-            }
-          }, {
-            text: 'Cancel',
-            icon: 'close',
-            role: 'cancel',
+    if(n != "Limpieza"){
+      const actionSheet = await this.actionSheetController.create({
+        header: 'Seleccione intensidad del '+ n,
+        buttons: [{
+          text: 'Regular',
+          role: 'destructive',
+          handler: () => { 
+            const shot = 1;
+            this.reqDrink(n, shot);
+                      }
+        }, {
+          text: 'Fuerte',
+          role: 'destructive',
+          handler: () => { 
+            const shot = 2;
+            this.reqDrink(n, shot);
+          
           }
-          ]
-        });
-        await actionSheet.present();
+        }, {
+          text: 'Cancel',
+          icon: 'close',
+          role: 'cancel',
+        }
+        ]
+      });
+      await actionSheet.present();
+    
+    } else {
+      const actionSheet = await this.actionSheetController.create({
+        header: 'Estas por limpiar la maquina. Por favor, comprueba que los productos de limpieza esten en su lugar. Luego, presioná "Aceptar"',
+        buttons: [{
+          text: 'Aceptar',
+          role: 'destructive',
+          handler: () => {
+            const shot = 1;
+            this.reqDrink(n, shot);
+                      }
+        }, {
+          text: 'Cancel',
+          icon: 'close',
+          role: 'cancel',
+        }
+        ]
+      });
+      await actionSheet.present();
+    }
+    
 }
 }

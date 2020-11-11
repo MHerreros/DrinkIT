@@ -1,6 +1,10 @@
 <ion-app>
   
-  <ion-content fullscreen class="ion-padding" scroll-y="false">
+  <ion-content fullscreen padding class="ion-padding" scroll-y="true"
+    [scrollEvents]="true"
+    (ionScrollStart)="logScrollStart()"
+    (ionScroll)="logScrolling($event)"
+    (ionScrollEnd)="logScrollEnd()">
 
     <ion-slides>
 
@@ -35,22 +39,25 @@
       </ion-slide>
 
       <ion-slide>
-        <img src="assets/icon/Mobile.png">
+        <img src="assets/icon/glass.png">
         <h1>PASO 1</h1>
-        <p1>Elegi el trago que quieras en la <p3>pestaña de cocktails</p3></p1>
+        <p1><p3> Apoya tu vaso</p3> sobre la plataforma</p1>
       </ion-slide>
 
       <ion-slide>
-        <img src="assets/icon/glass.png">
+        <img src="assets/icon/Mobile.png">
         <h1>PASO 2</h1>
-        <p1>Una vez elegido el trago<p3> apoya el vaso</p3> sobre la plataforma</p1>
+        <p1>Elegi el trago que quieras en la <p3>pestaña de cocktails</p3></p1>
       </ion-slide>
 
       <ion-slide>
         <img src="assets/icon/finish.png"/>
         <h1>LISTO!</h1>
         <p1>En unos segundos <p3>tendras tu trago!</p3></p1>
-        <ion-button fill="clear" href="/tabs/tab3" id = "empezar">Empeza a tomar! <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        <p></p>
+        <h1>Empeza a tomar!</h1>
+        <p></p>
+        <h1><ion-icon slot="end" name="arrow-down"></ion-icon></h1>
       </ion-slide>
 
     </ion-slides>

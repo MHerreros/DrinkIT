@@ -1,4 +1,4 @@
-var valorIP = "192.168.0.12";
+var valorIP = "192.168.0.9";
 export function setIpValue(s: string) {
     valorIP = s;
 }

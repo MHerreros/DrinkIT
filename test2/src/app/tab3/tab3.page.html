@@ -1,40 +1,25 @@
 <ion-app>
-  <ion-header>
+  <ion-header >
       <ion-toolbar translucent>
         <ion-title>
-          COCKTAILS
+          <h1>COCKTAILS</h1>
         </ion-title>
       </ion-toolbar>
     </ion-header>
     
-    <!-- <ion-content>
-      <ion-header translucent>
-        <ion-toolbar>
-          <ion-title size="large">Elegi tu trago</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    </ion-content> -->
-    
-    <!-- ​<picture>
-      <source srcset="https://www.marialabonita.com/wp-content/uploads/2019/08/cerveza-corona-355ml.jpg" type="image/svg+xml">
-      <img src="https://www.marialabonita.com/wp-content/uploads/2019/08/cerveza-corona-355ml.jpg" class="img-fluid img-thumbnail" alt="...">
-    </picture> -->
-    
-    <!-- Default -->
-    
     <ion-content fullscreen padding>
     <ion-card>
-      <img src="assets/icon/fernet1.png" />
+      <img src="assets/icon/vodka_con_limon.jpeg" />
       <ion-card-header>
-        <ion-card-subtitle>Fernet Branca</ion-card-subtitle>
-        <ion-card-title>Fernet con Coca</ion-card-title>
+        <ion-card-subtitle>Absolut Vodka</ion-card-subtitle>
+        <ion-card-title>Lemon Drop</ion-card-title>
       </ion-card-header>
     
       <ion-card-content >
-        30% Fernet, 70% Coca. Un par de estos y estas ATR para el Bolo.
+        Cocktail a base de Vodka con el sabor dulce y agrio del limon
       </ion-card-content>
       
-      <ion-button expand="block" (click)="shots('Fernet')"> Seleccionar </ion-button>
+      <ion-button expand="block" (click)="shots('Lemon Drop')" color = success> <h>Drink IT</h> </ion-button>
     </ion-card>
     
     <ion-card>
@@ -45,22 +30,9 @@
       </ion-card-header>
     
       <ion-card-content>
-        30% de vodka y un 70% de jugo de naranja para no para de bailar en toda la noche
+        El cocktail mas famoso del mundo. Bebida a base de Vodka con jugo de naranja
       </ion-card-content>
-      <ion-button expand ="block" color="warning" (click)="shots('Vodka')" >Seleccionar</ion-button>
-    </ion-card>
-    
-    <ion-card>
-      <img src="assets/icon/gintonic1.webp" />
-      <ion-card-header>
-        <ion-card-subtitle>Beefeater Gin</ion-card-subtitle>
-        <ion-card-title>Gin Tonic</ion-card-title>
-      </ion-card-header>
-    
-      <ion-card-content>
-        30% Gin y un 70% agua tonica. Al palo, pero ojo con la resaca mañana!
-      </ion-card-content>
-      <ion-button expand ="block" color="success" (click)="shots('Gin')" >Seleccionar</ion-button>
+      <ion-button expand ="block" color="warning" (click)="shots('Destornillador')" ><h>Drink IT</h></ion-button>
     </ion-card>
     
     <ion-card>
@@ -71,9 +43,35 @@
       </ion-card-header>
     
       <ion-card-content>
-        30% Campari y un 70% jugo de naranja. Bueno para disfrutar, no tanto para la joda.
+        Cocktail dulce que combina dos ingredientes provenientes del norte y del sur de Italia. Campari de Milano y naranjas del sur
       </ion-card-content>
-      <ion-button expand ="block" color="danger" (click)="shots('Campari')" >Seleccionar</ion-button>
+      <ion-button expand ="block" color="danger" (click)="shots('Campari Orange')" ><h>Drink IT</h></ion-button>
     </ion-card>
+
+    <ion-card>
+      <img src="assets/icon/vodka_campari.jpeg" />
+      <ion-card-header>
+        <ion-card-subtitle>Absolute Vodka & Campari</ion-card-subtitle>
+        <ion-card-title>Mutticano</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        La perfecta combinación entre Vodka, Campari y el fresco jugo de naranja
+      </ion-card-content>
+      <ion-button expand ="block" color="warning" (click)="shots('Mutticano')" ><h>Drink IT</h></ion-button>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Cuidado & Mantenimiento</ion-card-subtitle>
+        <ion-card-title>Limpieza</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Para garantizar la calidad de tus tragos te recomendamos que hagas una limpieza periódica de la máquina
+      </ion-card-content>
+      <ion-button expand ="block" color="primary" (click)="shots('Limpieza')" ><h>Limpiar</h></ion-button>
+    </ion-card>
+
     </ion-content>
     </ion-app>

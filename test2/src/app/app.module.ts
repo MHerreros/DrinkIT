@@ -9,13 +9,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { getIpValue } from './config';
+const config: SocketIoConfig = { url: 'http://' + getIpValue() + ':8080/drinks', options: {} };
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,SocketIoModule.forRoot(config)],
   providers: [
     StatusBar,
     SplashScreen,
+    
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

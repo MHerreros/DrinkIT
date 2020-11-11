@@ -9,6 +9,7 @@ import {getIpValue, setIpValue} from '../config';
 export class Tab1Page {
   valorIP: string;
   constructor() {this.valorIP = getIpValue()}
+  
   ipChange(): void {
     console.log(this.valorIP);
     setIpValue(this.valorIP);

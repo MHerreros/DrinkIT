@@ -14,6 +14,6 @@ function updateData() {
 			img = data.link;
 		}
 		});
-		setTimeout(updateData, 1500);
+		setTimeout(updateData, 1000);
   }
 };
