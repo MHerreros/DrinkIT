@@ -1,1 +1,1 @@
-# e-drink
+# Just DrinkIT
